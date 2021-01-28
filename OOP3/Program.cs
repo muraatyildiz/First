@@ -26,7 +26,7 @@ namespace OOP3
             ILoggerService fileLoggerServise = new FileLoggerService();
 
             AplicationManager aplicationManager = new AplicationManager();
-           aplicationManager.DoAplication(personelCredit,new List<ILoggerService> { new DatabaseLoggerService(), new FileLoggerService() });
+            aplicationManager.DoAplication(personelCredit,new List<ILoggerService> { new DatabaseLoggerService(), new FileLoggerService() });
 
             List<ICreditManager> credits = new List<ICreditManager>() { personelCredit, transportCredit, mortgageLoan };
           //  aplicationManager.CreditInfo(credits);

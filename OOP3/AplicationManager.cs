@@ -9,7 +9,7 @@ namespace OOP3
         public void DoAplication(ICreditManager creditManager , List<ILoggerService> loggerService)
         {
             creditManager.Calculate();
-         foreach(var logger in loggerService)
+            foreach(var logger in loggerService)
             {
                 logger.Log();
             }
